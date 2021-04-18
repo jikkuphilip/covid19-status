@@ -1,0 +1,54 @@
+<div class="container">
+<h2 class="totalclass mt-4">Total</h2>
+<hr class="linewidth">
+
+
+<div class="row">
+    <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Total Cases</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.cases}}</h4>
+        </div>
+      </div>
+
+      <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Total Deaths</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.deaths}}</h4>
+        </div>
+      </div>
+
+      <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Total Recovered</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.recovered}}</h4>
+        </div>
+      </div>  
+    </div>
+
+    <h2 class="totalclass mt-5">Today</h2>
+<hr class="linewidth">
+
+<div class="row">
+    <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Cases</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.todayCases}}</h4>
+        </div>
+      </div>
+
+      <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Deaths</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.todayDeaths}}</h4>
+        </div>
+      </div>
+
+      <div class="card cardouter col-lg-3 col-md-3 col-sm-3 mt-2 ml-5" >
+        <div class="card-body">
+          <h5 class="card-title text-center bluetxt">Recovered</h5>
+          <h4 class="card-text text-center bluetxt">{{dashboardData.todayRecovered}}</h4>
+        </div>
+      </div>  
+    </div>
+</div>

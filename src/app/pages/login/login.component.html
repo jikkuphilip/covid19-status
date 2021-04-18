@@ -1,0 +1,23 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../../../assets/mobile-login-concept-illustration_114360-135.jpg" id="icon" alt="User Icon" />
+        <br><strong>COVID - 19</strong>
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="Loginform"> 
+        <input type="text" id="login" class="fadeIn second" name="usrname" formControlName="username" placeholder="Username">
+        <p class="text-danger" *ngIf="submitted && Loginform.get('username').errors?.required">Username is required</p>
+        <input type="password" id="password" formControlName="password" class="fadeIn third" name="password" placeholder="Password">
+        <p class="text-danger" *ngIf="submitted && Loginform.get('password').errors?.required">Password is required</p>
+        <input type="button" class="fadeIn fourth" (click)="login()" value="Log In">
+      </form>
+  
+      
+  
+    </div>
+  </div>
